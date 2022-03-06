@@ -13,3 +13,10 @@ var av = averageSalaries.Average(new []{ 6000,5000,4000,3000,2000,1000});
 
 Console.WriteLine(av);
 
+
+Console.WriteLine("Determine the largest perimeter of a triangle.");
+var largestPerimeter = new LargestPerimeterTriangle();
+Console.WriteLine($"The result of the largest triangle" +
+                  $" {LargestPerimeterTriangle.LargestPerimeter(new[] {1, 3, 5, 6})}" );
+
+
