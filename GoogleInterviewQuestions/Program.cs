@@ -1,4 +1,6 @@
 ﻿// See https://aka.ms/new-console-template for more information
+
+using System.Text;
 using GoogleInterviewQuestions;
 
 var count = new CountOddNumbers();
@@ -18,5 +20,18 @@ Console.WriteLine("Determine the largest perimeter of a triangle.");
 var largestPerimeter = new LargestPerimeterTriangle();
 Console.WriteLine($"The result of the largest triangle" +
                   $" {LargestPerimeterTriangle.LargestPerimeter(new[] {1, 3, 5, 6})}" );
+
+Console.WriteLine("");
+Console.WriteLine("Rotate a given array n number of items");
+var numbers = new[] {1, 2, 3, 4, 5};
+var rotateArrayQuestion = new RotateArrayQuestion();
+rotateArrayQuestion.Rotate(numbers, 3);
+var result = new StringBuilder();
+foreach (var number in numbers)
+{
+    result.Append(number);
+}
+Console.WriteLine($" result of rotating array {result.ToString()}");
+
 
 
