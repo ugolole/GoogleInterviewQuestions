@@ -34,26 +34,26 @@ public class RotateArrayQuestion
     // f = 7 i == length - 1
     // replace(i, i - 1)
     public void Rotate(int[] nums, int k) {
-        k = k % nums.Length;
-        
-        for(int i = 0; i<k; i++){
-            Rotate(k, nums);
-        }
+        // Reverse the entire array
+        k %= nums.Length;
+
+        Reverse(nums, 0, nums.Length - 1);
+        Reverse(nums, 0, k - 1);
+        Reverse(nums, k, nums.Length - 1);
         
     }
     
-    // Swaps the current value with the next value only once.
-    private void Swap(int[] nums, int current, int next ){
+    // Example of the array to be reversed [1,2,3,4,5,6,7]
+    // Swap the first and last element in the array
+    private void Reverse(int[] nums, int start, int end){
         int temp = 0;
-        temp = nums[current];
-        nums[current] = nums[next];
-        nums[next] = temp;
-    }
-    
-    private void Rotate(int numberOfRotations, int[] nums){
-        for(int i = nums.Length - 1; i > 0; i--){
-             
-            Swap(nums, i, i-1);
+        while(start<end){
+            temp = nums[start];
+            nums[start] = nums[end];
+            nums[end] = temp;
+            
+            start = start + 1;
+            end = end - 1;
         }
     }
 }
