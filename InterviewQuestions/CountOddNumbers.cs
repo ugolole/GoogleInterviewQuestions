@@ -1,4 +1,4 @@
-namespace GoogleInterviewQuestions;
+namespace InterviewQuestions;
 
 /// <summary>
 /// A class that contains a method used to count odd number between a given range.

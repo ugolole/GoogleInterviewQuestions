@@ -1,4 +1,4 @@
-namespace GoogleInterviewQuestions;
+namespace InterviewQuestions;
 
 /// <summary>
 /// Determine the average salary excluding the minimum and maximum.

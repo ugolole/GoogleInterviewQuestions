@@ -1,4 +1,4 @@
-namespace GoogleInterviewQuestions;
+namespace InterviewQuestions;
 
 public class LargestPerimeterTriangle
 {

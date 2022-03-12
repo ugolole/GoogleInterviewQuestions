@@ -1,4 +1,4 @@
-namespace GoogleInterviewQuestions;
+namespace InterviewQuestions;
 
 /// <summary>
 /// A class that contains a method used to rotate an array.
