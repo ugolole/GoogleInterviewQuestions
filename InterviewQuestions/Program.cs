@@ -2,6 +2,8 @@
 
 using System.Text;
 using InterviewQuestions;
+using InterviewQuestions.ProgrammingSkills;
+using InterviewQuestions.TopInterviewQuestions;
 
 var count = new CountOddNumbers();
 const int low = 3;
