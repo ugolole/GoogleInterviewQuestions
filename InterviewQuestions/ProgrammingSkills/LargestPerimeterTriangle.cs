@@ -1,4 +1,4 @@
-namespace InterviewQuestions;
+namespace InterviewQuestions.ProgrammingSkills;
 
 public class LargestPerimeterTriangle
 {
