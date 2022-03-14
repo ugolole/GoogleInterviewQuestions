@@ -1,4 +1,4 @@
-namespace InterviewQuestions;
+namespace InterviewQuestions.TopInterviewQuestions;
 
 /// <summary>
 /// A class that contains a method used to rotate an array.

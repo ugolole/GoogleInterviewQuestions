@@ -1,11 +1,11 @@
-namespace InterviewQuestions;
+namespace InterviewQuestions.ProgrammingSkills;
 
 /// <summary>
+/// https://leetcode.com/problems/count-odd-numbers-in-an-interval-range/
 /// A class that contains a method used to count odd number between a given range.
 /// </summary>
 public class CountOddNumbers
 {
-
     /// <summary>
     /// Count the number of odd numbers in between a low and high number.
     /// </summary>
@@ -16,8 +16,7 @@ public class CountOddNumbers
     {
         return NumberOfOdds(low, high);
     }
-    
-    
+
     /// <summary>
     /// Creates an array of numbers that are odd.
     /// </summary>
