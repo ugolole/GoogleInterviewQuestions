@@ -4,7 +4,7 @@ namespace InterviewQuestions.ProgrammingSkills;
 /// Determine the average salary excluding the minimum and maximum.
 /// https://leetcode.com/problems/average-salary-excluding-the-minimum-and-maximum-salary/
 /// </summary>
-public class AverageSalaryExcluding
+internal class AverageSalaryExcluding
 {
 
     public double Average(int[] salary)
