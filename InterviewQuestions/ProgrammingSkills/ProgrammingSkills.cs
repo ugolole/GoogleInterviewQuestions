@@ -1,3 +1,4 @@
+using System.Net.Sockets;
 using static System.Console;
 
 namespace InterviewQuestions.ProgrammingSkills;
@@ -33,5 +34,31 @@ public class ProgrammingSkills
         WriteLine("####### Return the largest perimeter of a triangle with a non zero area formed from 3 lengths.");
         WriteLine("The large area of the triangle  {2, 1, 2} is " + largestPerimeter.LargestPerimeter(numbers));
         WriteLine();
+        
+        // Find the nearest point that has the same x and y coordinate
+        var nearestPoint = new NearestPoint();
+        int x = 3;
+        int y = 4;
+        int[,] points = new int[,] { {1,2},{3,1},{2,4},{2,3},{4,4} } ;
+
+        //var result = nearestPoint.NearestValidPoint(x, y, points);
+        Stack<int> stack = new Stack<int>();
+
+        int start = 0;
+        int end = 10;
+
+        int number = 2;
+
+        while (start < end)
+        {
+            stack.Push(number);
+            start++;
+            number++;
+        }
+
+        stack.Pop();
+        
+        WriteLine("Result of using a stack "+number);
+        WriteLine("The size of the stack " + stack.Count);
     }
 }
