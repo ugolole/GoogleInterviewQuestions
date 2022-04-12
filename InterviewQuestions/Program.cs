@@ -11,6 +11,12 @@ ProgrammingSkills.Initialize();
 TopInterviewQuestions.Initialize();
 
 // Display solutions for the possible questions Geotab will asks.
-GeotabQuestions.Initialize();
+// GeotabQuestions.Initialize();
 
 
+var word = "Complete";
+Console.WriteLine(word.Substring(0,3));
+
+
+Console.WriteLine("###### The default value of data time.");
+Console.WriteLine(new DateTime());
